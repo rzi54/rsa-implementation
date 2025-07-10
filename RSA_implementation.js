@@ -43,7 +43,7 @@
 // Génère une graine cryptographiquement sûre (256 bits) dans Node.js
 function generateSecureSeedNode(bytes) {
     const crypto = require('crypto');
-    const seedHex = crypto.randomBytes(bytes).toString('hex'); // 256 bits
+    const seedHex = crypto.randomBytes(bytes).toString('hex');
     return BigInt('0x' + seedHex);
 }
 
@@ -56,7 +56,7 @@ function generateSecureSeedNode(bytes) {
 // ---------------------------------------------------------------- Génération de graines (cryptographiquement sûr) pour Navigateur.
 
 /*
-// Génère une graine cryptographiquement sûre (256 bits) dans un navigateur
+// Génère une graine cryptographiquement sûre dans un navigateur
 function generateSecureSeedBrowser(bytes) {
 
 const array = new Uint32Array(bytes)
@@ -86,7 +86,7 @@ console.log("Graine générée (navigateur):", seedBrowser);
 // Génère une graine cryptographiquement sûre (256 bits) pour React Native
 function generateSecureSeedReactNative(bytes) {
 
-const array = new Uint32Array(bytes); // 8 x 32 bits = 256 bits
+const array = new Uint32Array(bytes);
 crypto.getRandomValues(array);
 
 let seed = 0n;
