@@ -1049,7 +1049,6 @@ class RSA {
 
     /**
      * Déchiffrement RSA combinant aveuglement et optimisation CRT.
-     * Attention : cette méthode est expérimentale et peut ne pas fonctionner correctement.
      * @param {BigInt} cipherBigInt - Le message chiffré.
      * @param {Object} privateKey - La clé privée RSA.
      * @returns {string} Le message déchiffré.
@@ -1883,8 +1882,6 @@ class RSA {
 /**
  * Classe pour générer des nombres aléatoires cryptographiquement sécurisés
  * en utilisant l’algorithme Blum Blum Shub (BBS).
- *
- * @author Randy LUZI
  */
 class GenerateCryptoRandomNumber {
 
