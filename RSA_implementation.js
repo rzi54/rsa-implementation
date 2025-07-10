@@ -83,7 +83,7 @@ console.log("Graine générée (navigateur):", seedBrowser);
 // Veillez à installer la dépendance : npm install react-native-get-random-values
 // Veillez à importer la dépendance : import 'react-native-get-random-values';
 
-// Génère une graine cryptographiquement sûre (256 bits) pour React Native
+// Génère une graine cryptographiquement sûre pour React Native
 function generateSecureSeedReactNative(bytes) {
 
 const array = new Uint32Array(bytes);
